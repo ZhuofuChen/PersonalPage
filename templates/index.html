@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+	function httpGetAsync(theUrl, callback) {
+	    var xmlHttp = new XMLHttpRequest();
+	    xmlHttp.onreadystatechange = function() {
+	        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+	            callback(xmlHttp.responseText);
+	    }
+	    xmlHttp.open("GET", theUrl, true); // true for asynchronous
+	    xmlHttp.send(null);
+	}
+</script>
+<title>Personal Page</title>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Up Master's Developing Hard and Hard...</h1>
+<h2>(๑•ᴗ•๑)<h2>
+
+</body>
+</html>
